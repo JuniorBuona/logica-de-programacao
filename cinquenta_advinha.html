@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+	function lineJump(){
+		document.write("<br><hr>");
+	}
+
+	function print(text){
+		document.write("<big><big><big>" + text + "</big></big></big>");
+		lineJump();
+	}
+
+	var numeroPensado = Math.round(Math.random() * 10);
+    var chute = parseInt(prompt("Eu pensei em um número, quer advinhar? Me fala em que número eu pensei: "));
+
+
+    
+    if (chute == numeroPensado){
+    	print("Caramba, você é bom de chute ein?");
+   
+    } else {
+    		print("Sinto muito hahaha, não foi esse! Pensei no: " + numeroPensado + "!");
+    }
+
+</script>
