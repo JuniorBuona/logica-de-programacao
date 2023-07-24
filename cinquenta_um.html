@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+
+<script>
+    function lineJump() {
+        document.write("<br>");
+    }
+
+    function print(text) {
+        document.write("<big><big><big><big>"+ text + "</big></big></big></big>" );
+        lineJump();
+    }
+
+    var idade = parseInt(prompt("Qual é sua idade?"));
+    var temCarteira = prompt("Tem carteira? Responda S ou N");
+
+    if (idade >= 18 && temCarteira == "s"){
+    	print("Ah sim, você pode dirigir!");
+    } else {
+    	print("Sinto muito, você não pode dirigir!");
+ 	}
+
+
+</script>
+
