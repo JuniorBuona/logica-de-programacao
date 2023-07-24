@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<script>
+    function lineJump(){
+
+        document.write("<br><br>");
+
+    }
+
+    function print(text){
+
+        document.write(text);
+        lineJump();
+    }
+
+    var ano = 2023;
+    var nome1 = "Ju";
+    var nome2 = "Dani";
+    var nome3 = "Lu";
+    var anoNascJu = 1992;
+    var anoNascDani = 1997;
+    var anoNascLu = 1996;
+    var idadeJu = ano - anoNascJu;
+    var idadeDani = ano - anoNascDani;
+    var idadeLu = ano - anoNascLu; 
+    var quantidadePessoas = 3;  
+    var mediaIdades = ((idadeJu + idadeDani + idadeLu)/quantidadePessoas);
+    var pulaLinha = "<br><br>"
+
+    print("A idade de " + nome1 + " é: " + idadeJu + " anos!");
+    print("A idade de " + nome2 + " é: " + idadeDani + " anos!");
+    print("A idade de " + nome3 + " é: " + idadeLu + " anos!");
+
+    print("A média das idades é: " + Math.round(mediaIdades) + ".");
+
+</script>
