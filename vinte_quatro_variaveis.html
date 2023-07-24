@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+
+    var ano = 2023;
+    var nome1 = "Ju";
+    var nome2 = "Dani";
+    var nome3 = "Lu";
+    var anoNascJu = 1992;
+    var anoNascDani = 1997;
+    var anoNascLu = 1996;
+    var idadeJu = ano - anoNascJu;
+    var idadeDani = ano - anoNascDani;
+    var idadeLu = ano - anoNascLu; 
+    var quantidadePessoas = 3;  
+    var mediaIdades = ((idadeJu + idadeDani + idadeLu)/quantidadePessoas);
+
+    document.write("A idade de " + nome1 + " é: " + idadeJu + " anos!" + "<br><br>");
+    document.write("A idade de " + nome2 + " é: " + idadeDani + " anos!" + "<br><br>");
+    document.write("A idade de " + nome3 + " é: " + idadeLu + " anos!" + "<br><br>");
+
+    document.write("A média das idades é: " + Math.round(mediaIdades) + ".");
+
+</script>
