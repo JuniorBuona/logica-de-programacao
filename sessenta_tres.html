@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+	function lineJump(){
+		document.write("<br><br>");
+	}
+
+	function print(text){
+		document.write("<big>" + text + "</big>");
+		lineJump();
+	}
+
+	
+	var tabuada = parseInt(prompt("Entre a tabuada que deseja saber:"));
+	var multiplicador = 1;
+	
+
+	;
+
+	while (multiplicador <= 10) {
+        var resultado = tabuada * multiplicador;
+		print(tabuada + " x " + multiplicador + " = " + resultado);
+		multiplicador = multiplicador + 1;
+	}
+
+	print("FIM!");
+
+
+</script>
+	
