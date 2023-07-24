@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+
+<button>Exibir texto</button>
+<input>
+
+<script>
+
+	var input = document.querySelector("input")
+	var button = document.querySelector("button");
+	button.onclick = exibeTexto;
+
+	function exibeTexto(){
+
+		var textoDigitado = input.value;
+		alert(textoDigitado);
+
+	}
+
+</script>
