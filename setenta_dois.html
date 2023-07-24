@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function lineJump() {
+
+		document.write("<br><hr>");
+
+	}
+
+	function print(text) {
+		
+		document.write("<big><big><big>" + text + "</big></big></big>");
+		lineJump();
+
+	}
+
+	var numeroPensado = 5;
+	var mostraErro = false;
+	var contador = 1;
+
+	while (contador <=3) {
+
+		var chute = parseInt(prompt("Chute um número: "));
+
+		if (chute == numeroPensado) {
+			mostraErro = false;
+			print("Legal ein, você está afiado! Acertou!");
+			break;
+
+		} else {
+
+			alert("Você errou. Tente novamente!");
+
+		}
+
+		if (contador == 2) {
+			mostraErro = true;
+		}
+
+		contador++;
+
+	}
+
+	if (mostraErro) {
+		print("Numero de tentativas excedido, você não conseguiu!")
+	}
+
+</script>
+
