@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function lineJump() {
+		document.write("<br><hr>");
+	}
+
+	function print(text) {
+		document.write("<big><big><big>" + text + "</big></big></big>");
+		lineJump();
+	}
+
+    var numeroPensado = Math.round(Math.random() * 10);
+    var mostrarErro = false;
+	var tentativas = 1;
+
+    while (tentativas <= 3) {
+
+    	var chute = parseInt(prompt("Digite seu chute!"));
+
+    	if(chute == 5) {
+    		mostrarErro = false;
+    		print("Você acertou!");
+    		break;
+
+    	} else {
+
+    		alert("Você errou! Tente denovo!");
+    		
+    	} 
+
+    	if (tentativas == 2) {
+    		mostrarErro = true;
+    	}
+
+    	tentativas++;
+    } 
+
+    if (mostrarErro) {
+    	print("Você não conseguiu!");
+    }
+  	
+   
+</script>
