@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+
+<input>
+<button>Aperte para descobrir 4 números de 1 a 10</button>
+
+<script>
+
+	var mostraErro = false;
+
+	var button = document.querySelector("button");
+	button.onclick = executa;
+	var input = document.querySelector("input");
+	input.focus();
+
+	function executa() {
+
+		var possibilidades = [2,4,6];
+
+		for(var posicao = 0; posicao < possibilidades.length; posicao++) { 
+
+			if(input.value == possibilidades[posicao]) {
+
+				alert("UAU, CORRETO!");
+				mostraErro = true;
+				input.focus();
+				input.value = "";
+				break;
+
+			} else {
+
+				mostraErro = false;
+
+			}
+		}
+
+		if(mostraErro == false) {
+
+			alert("Hmm.. tente novamente!");
+			input.focus();
+			input.value = "";
+		}
+	}
+
+</script>
