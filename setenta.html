@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<script>
+	function lineJump() {
+
+		document.write("<br><hr>");
+	}
+
+	function print(text) {
+
+		document.write("<big><big><big>" + text + "</big></big></big>");
+		lineJump();
+	}
+
+	var contador = 1;
+	var mostraErro = false;
+	var numeroPensado = 5;
+
+	while(contador <= 3) {
+
+		var chute = parseInt(prompt("Digite seu chute"));
+
+		if (chute == numeroPensado) {
+			mostraErro = false;
+			print("Legal ein, você acertou, parabéns!");
+			break;
+
+		} else {
+
+			alert("Você errou, tente novamente!");
+
+		}
+
+		if (contador == 2) {
+			mostraErro = true;
+		}
+
+		contador++;
+	}
+
+	if (mostraErro) {
+		print ("Fim de jogo, limite de tentativas excedido, você não conseguiu!");
+	}
+
+</script>
