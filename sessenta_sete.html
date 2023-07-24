@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function lineJump() {
+
+		document.write("<br><br>");
+
+	}
+
+	function print(text) {
+
+		document.write("<big><big><big>" + text + "</big></big></big>");
+		lineJump();
+
+	}
+
+	while (isNaN(quantidadeFamiliares)) {
+
+		var quantidadeFamiliares = parseInt(prompt("Quantos familiares tem em sua residência?"));
+		var totalIdades = 0;
+		var contador = 1;
+
+		while (contador <= quantidadeFamiliares) {
+			var idade = parseInt(prompt("Digite a idade do familiar:"));
+			totalIdades = totalIdades + idade;
+			contador++;
+		}
+	}
+
+	var mediaIdades = totalIdades / quantidadeFamiliares 
+	print("A média das idades dos familiares é " + mediaIdades);
+
+</script>
