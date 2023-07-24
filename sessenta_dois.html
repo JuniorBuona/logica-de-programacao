@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function lineJump() {
+
+		document.write("<br><br>");
+
+	}
+
+	function print(text) {
+
+		document.write("<big><big><big>" + text + "</big></big></big>");
+		lineJump();
+
+	}
+
+	while (isNaN(dividendo)){
+
+		var dividendo = parseInt(prompt("Olá, deseja conferir a divisão de qual número? Te mostrarei o número que escolher dividido por 1 até 10."));
+
+		for(var divisor = 1; divisor <= 10; divisor++){
+
+			var resultado = Math.round(dividendo / divisor);
+			print(dividendo + " : " + divisor + " = " + resultado);
+
+		}
+	}
+
+	print ("Fim!");
+
+</script>
