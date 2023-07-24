@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<button>Conferir Resposta</button>
+<input>
+
+<script>
+
+	var input = document.querySelector("input");
+
+	var button = document.querySelector("button");
+	button.onclick = funciona;
+
+	var segredo = Math.round(Math.random() * 10);
+
+	function funciona(){
+
+		if (input.value == segredo){
+
+			alert("Você acertou ein, top!");
+
+		} else {
+
+			alert("Você errou, tente outra vez!");
+
+		}
+
+	}
+
+</script>
