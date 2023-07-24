@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+	function lineJump(){
+		document.write("<br><hr>");
+	}
+
+	function print(text){
+		document.write("<big>" + text + "</big>");
+		lineJump();
+	}
+
+	var anoCopa = 1930;
+	var dataLimite = parseInt(prompt("Olá, tudo bom? Por favor, pode estipular a data limite?"));
+
+	while(anoCopa <= dataLimite) {
+
+		print("Teve copa em " + anoCopa);
+		anoCopa = anoCopa + 4;
+   	
+	}
+
+	print("FIM!");
+</script>
+	
