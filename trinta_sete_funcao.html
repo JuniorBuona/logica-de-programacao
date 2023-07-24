@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+	function lineJump(){
+		document.write("<br><br>");
+	}
+	function calculaGeracao(){
+		var anoChegadaPortuga = 1500;
+		var anoAtual = 2023;
+		var difTempoChegadaPortuga = anoAtual - anoChegadaPortuga;
+		var tempoGeracoes = 28;
+		var totalGeracoes = Math.round(difTempoChegadaPortuga / tempoGeracoes);
+		 
+		document.write("Desde de o ano de 1500, o número de gerações que se passaram foi de:");
+		lineJump();
+		document.write("<h4>" + totalGeracoes + " gerações!" + "</h4>");
+
+	}
+
+	calculaGeracao();
+
+
+</script>
