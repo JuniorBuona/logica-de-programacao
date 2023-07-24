@@ -1,0 +1,31 @@
+<meta charset="UTF-8"> 
+
+<button>Conferir Resposta</button>
+
+<input>
+
+<script>
+
+	function funciona() {
+
+		var numeroPensado = 5
+		var input = document.querySelector("input");
+
+		if(input.value == numeroPensado){
+
+			alert("Você acertou!");
+
+		} else {
+
+			alert("Você errou!");
+
+		}
+
+		
+
+	}
+
+	var button = document.querySelector("button");
+	button.onclick = funciona;
+
+</script>
