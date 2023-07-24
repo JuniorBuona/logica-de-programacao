@@ -1,0 +1,92 @@
+<meta charset="UTF-8">
+
+<input>
+
+<button>Descubra 4 números</button>
+
+<script>
+ 
+	var mostraErro = false;
+
+    var button = document.querySelector("button");
+	button.onclick = executa;
+	var input = document.querySelector("input");
+	input.focus();
+	
+	function sorteia() {
+
+		return Math.round(Math.random() * 10);
+
+	}
+
+	function sorteiaNumeros(quantidade) {
+
+		var segredos = [];
+		var contador = 1; 
+
+		while(contador < quantidade) {
+
+			var numeroAleatorio = sorteia();
+
+			if(numeroAleatorio !== 0) {
+
+				var achou = false;
+
+				for(var posicao = 0; posicao < segredos.length; posicao++) {
+
+					if(segredos[posicao] == numeroAleatorio) {
+
+						achou = true;
+						break;
+
+					}
+
+				}
+
+				if (achou == false) {
+
+				segredos.push(numeroAleatorio); // é igual "var segredos = [numeroAleatorio]""
+				contador++;
+				}
+
+			}
+			
+		
+		}
+
+		return segredos;
+
+	}
+
+	var possibilidades = sorteiaNumeros(5); //[1,3,5]
+
+	console.log(possibilidades);
+
+	function executa() {
+ 		
+		for(var lugar = 0; lugar < possibilidades.length; lugar++) {
+
+			if(input.value == possibilidades[lugar]) { 
+	
+				alert("Você acertou!");
+				mostraErro = true;
+				input.value = "";
+			 	input.focus();
+			 	break;
+
+			} else {
+				mostraErro = false;
+			}
+
+		}
+
+		if(mostraErro == false) {
+			alert("você errou!");
+			input.value = "";
+			input.focus();
+		}
+
+
+	}
+
+</script>
