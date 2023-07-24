@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function lineJump() {
+
+		document.write("<br><br>");
+
+	}
+
+	function print(text) {
+
+		document.write("<big><big><big>" + text + "</big></big></big>");
+		lineJump();
+
+	}
+
+	while (isNaN(numeroBase)){
+
+		var numeroBase = parseInt(prompt("Por favor, informe qual número deseja somar! As somas serão incrementdas de 1 a 10!"));
+
+		for (var soma = 1; soma <= 10; soma++) {
+			resultado = Math.round(numeroBase + soma);
+		print(numeroBase + " + " + soma + " = " + resultado);
+		}
+	}
+
+	print("Fim!");
+
+</script>
