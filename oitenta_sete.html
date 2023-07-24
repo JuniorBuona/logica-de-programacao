@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+
+
+<h1>Receitas do Ju</h1>
+
+<script>
+
+	function print(text) { 
+		document.write("<big><big><big>" + text + "</big></big></big>");
+		document.write("<br>");
+
+	}
+
+	function verificaRepetidos() {
+
+		var ingrediente = prompt("Informe o ingrediente " + contador);
+
+		var jaExiste = false;
+
+        for( var posicao = 0; posicao < ingredientes.length; posicao++) {
+
+            if( ingredientes[posicao] == ingrediente) {
+
+                jaExiste = true;
+                break;
+            }
+        }
+
+        if( jaExiste == false) {
+
+            ingredientes.push(ingrediente);
+            contador++;
+        }
+
+	}
+
+    var ingredientes = [];
+
+    var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+
+    var contador = 1;
+
+    while(contador <= quantidade) {
+
+        
+        verificaRepetidos();
+        
+    }
+
+    console.log(ingredientes);
+
+    print("Os ingredientes são:" + ingredientes + "!");
+
+</script>
