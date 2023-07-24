@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+	function lineJump() {
+		document.write("<br><hr>");
+	}
+
+	function print(text) {
+		document.write(text);
+		lineJump();
+	}
+
+	function calculaImc(peso, altura) {
+        
+        var nome1 = "Ju";
+        var pesoNome1 = 100;
+        var alturaNome1 = 1.78;
+
+        var nome2 = "Dani";
+        var pesoNome2 = 65;
+        var alturaNome2 = 1.75;
+
+		var imc = Math.round(peso / (altura*altura));
+		return imc;
+	}
+
+	var imcNome1 = calculaImc(100, 1.78);
+	var imcNome2 = calculaImc(65, 1.75);
+
+	print(imcNome1);
+	print(imcNome2);
+
+</script>
